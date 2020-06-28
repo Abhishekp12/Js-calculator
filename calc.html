@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<style >
+		.calc{
+			margin-top: 80px;
+			margin-left: 500px;
+			border:3px solid black;
+			width:226px;
+			position: relative;
+		}
+
+#clears {
+	width: 220px;
+
+}
+
+#form{
+	width:200px;
+	height: 200px;
+	position: absolute;
+}
+input {
+	height: 50px;
+	width: 70px;
+	font-weight: bold;
+	font-size: 30px;
+   }
+#enter{
+	width: 220px;
+	border:1px solid black;
+	
+}
+#foot{
+	margin-left:530px;
+	font:25px  ;
+
+}
+	</style>
+
+</head>
+<body>
+
+	<div class="calc">
+		<form name="forms"  id="form1">
+			<input type="text" id="enter"  name="calculation" value=" " /><br />
+			
+			<input type="button"  value="1"  onclick="forms.calculation.value += '1'" />
+            <input type="button"  value="2"  onclick="forms.calculation.value += '2'" /> 
+			<input type="button"  value="3"  onclick="forms.calculation.value += '3'" />
+			<br/>
+			<input type="button"  value="4"  onclick="forms.calculation.value +='4'" />
+            <input type="button"  value="5"  onclick="forms.calculation.value += '5'" /> 
+			<input type="button"  value="6"  onclick="forms.calculation.value += '6'" />
+			<br/>
+			<input type="button"  value="7"  onclick="forms.calculation.value += '7'" />
+            <input type="button"  value="8"  onclick="forms.calculation.value += '8'" /> 
+			<input type="button"  value="9"  onclick="forms.calculation.value += '9'" />
+			<br/>
+			<input type="button"  value="+"  onclick="forms.calculation.value += '+'" />
+            <input type="button"  value="-"  onclick="forms.calculation.value += '-'" /> 
+			<input type="button"  value="*"  onclick="forms.calculation.value += '*'" />
+			<br/>
+			<input type="button"  value="/"  onclick="forms.calculation.value += '/'" />
+            <input type="button"  value="0"  onclick="forms.calculation.value += '0'" /> 
+			<input type="button"  value="="  onclick="forms.calculation.value = eval(forms.calculation.value)" />
+			<br />
+			<input type="button"  id="clears" value="clear all"  onclick="forms.calculation.value=' ' " />
+
+
+	
+		</form>
+		
+	</div>
+	
+<footer id="foot" >simple calculator<footer>
+
+</body>
+</html>
